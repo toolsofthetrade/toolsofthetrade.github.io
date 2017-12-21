@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--Python Page
+by C Todd Rhodes
+12/20/2017
+Last Updated: 12/20/2017
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/totstyle.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+
+
+    <!-- Custom styles for this template -->
+    <style>
+    body {
+  padding-top: 3.5rem;
+	}
+    </style>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+    $(document).ready(function(){  $("#header").load("../header.html");});
+
+    </script>
+
+<div id="header"></div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Atmospheric Science Tools of the Trade: Python</h1>
+        <p>The Tools of the Trade Session has been honored to have experts on a variety of different tools. Check out the supplemental material generously provided by these experts!</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Patrick T. Marsh - 2016</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Ryan May - 2017</h2> 
+	  <img src="Images/RyanMay2017.jpg" alt="Ryan May" align="middle" height="250" width="250" border="50">
+	  <div class="content" id="p2">
+		  <h5><a href="SuppMat/RyanMay/Python_RyanMay_2017.pdf" download>Download Supplemental Material</a></h5>
+	  <h4>About</h4>
+	  <p>Ryan May is a software engineer at Unidata, part of the University Corporation for Atmospheric Research (UCAR) Community Programs, working on Python software and training for the atmospheric science community. Ryan began his meteorology career pursuing a B.S. in Meteorology at the University of Oklahoma in 1999. During this time, he worked as a student at the National Weather Service Radar Operations Center, igniting a passion for both radar meteorology and software development. Ryan’s dual passions continued to drive his graduate studies in meteorology at the University of Oklahoma, where he completed his M.S. in 2005 and Ph.D. in 2014, focusing his research on the simulation of dual polarization radar signals. Starting in 2009, while completing his Ph.D., Ryan began working as a software engineer on visualization and data processing algorithms for weather radar data at Enterprise Electronics Corporation. In 2014, Ryan started at Unidata, exchanging working on radar meteorology for working on tools for meteorology in Python. Currently, he is the core developer of the MetPy and Siphon Python packages, as well as a member of the development team for the matplotlib Python visualization library.</p>
+	  </div>
+          <a class="btn btn-secondary" id="ViewMore2" href="#" role="button" onclick="MoreLess(2)">show more &darr;</a>
+        </div>
+        <div class="col-md-4">
+          <h2>Brian Rose - 2018</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+
+      <hr>
+      <footer>
+        <p>&copy; AMS SCPC Tools of the Trade 2017</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+<!--JAVASCRIPT FUNCTIONS BEGIN HERE-->
+<script>
+p2Toggle = 0
+
+function MoreLess(x){
+if (x == 2) {
+if (p2Toggle == 0){
+	$("#p2").css({
+		'height': 'auto'
+	});
+	document.getElementById("ViewMore2").innerHTML="show less &uarr;";
+	p2Toggle = 1;
+
+}
+else if (p2Toggle == 1){
+	$("#p2").css({
+		'height': '10em'
+	});
+	document.getElementById("ViewMore2").innerHTML="show more &darr;";
+	p2Toggle = 0 ;
+}
+}
+}
+</script>
+</html>

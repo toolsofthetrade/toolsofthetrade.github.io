@@ -1,0 +1,12 @@
+/*Coustomized Styling for Tools of the Trade Website beyond bootstrap
+ * by C Todd Rhodes
+ * Last Updated: 12/20/2017
+ */
+
+.content{
+	font: 14px;
+	overflow: hidden;
+	height: 10em;
+	line-height: 1em;
+}
+
