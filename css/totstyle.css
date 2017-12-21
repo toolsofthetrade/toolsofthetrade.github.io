@@ -3,6 +3,10 @@
  * Last Updated: 12/20/2017
  */
 
+body {
+	padding-top: 2.0rem;
+}
+
 .content{
 	font: 14px;
 	overflow: hidden;
@@ -10,3 +14,7 @@
 	line-height: 1em;
 }
 
+#tab{
+	display: inline-block;
+	margin-left: 40px;
+}
