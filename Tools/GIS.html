@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--Python Page
+by C Todd Rhodes
+12/20/2017
+Last Updated: 12/20/2017
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/totstyle.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+
+    <!-- Note: customized styles are in external stylesheet -->
+
+  </head>
+
+  <body>
+    <script type="text/javascript">
+    $(document).ready(function(){  $("#header").load("./header.html");});
+
+    </script>
+
+<div id="header"></div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Tool: Geographic Information Systems (GIS)</h1>
+        <p>The Tools of the Trade Session has been honored to have experts on a variety of different tools. Check out the supplemental material generously provided by these experts!</p>
+	<!--  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+
+    <!--Column1 Starts Here-->
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+      <!-- Column1 Starts Here -->
+        <div class="col-md-4">
+          <h2>Greg Dobson - 2016</h2> 
+	  <img src="Images/GregDobson2016.jpg" alt="Greg Dobson" height="250" width="auto" border="50">
+	  <div class="content" id="p1">
+		  <h5><a href="SuppMat/GregDobson/GIS_GregDobson_2016.pdf" download>Download Supplemental Material</a></h5>
+		  <h5><a href="Slides/GregDobson/GIS_GregDobson_2016.pptx" download>Download Slides</a></h5>
+	  <h4>About</h4>
+	  <p><span id="tab"></span>Greg has been with UNC Asheville’s National Environmental Modeling and Analysis Center (NEMAC) for nearly 10 years, serving first as the Geographic Information Systems (GIS) Coordinator before becoming the Director of Geospatial Technology, in addition to being a Research Scientist during this time. He is responsible for all of NEMAC's GIS activities, research, mapping, and development. In this capacity he coordinates and provides GIS support for the Center’s various projects. His current research interests include: (1) GIS applications for applied physical geography (land use, natural hazards, climate, hydrology, extreme weather); (2) GIS as a decision support tool; (3) the integration of GIS with weather, climate, and society (societal impacts); (4) geospatial visualization (2D and 3D) and web mapping technologies; and (5) the use of geospatial technologies for effective science communication and outreach. <br>					
+	  <span id="tab"></span>In addition to his responsibilities as NEMAC's GIS Coordinator, Greg also serves as an Adjunct Faculty member in the Atmospheric Sciences Department at UNC Asheville, where he developed and continues to teach a GIS course for meteorology majors titled “GIS in Meteorology”. He also teaches introductory GIS courses as an Adjunct Faculty member at a local community college. Greg holds a B.S. in Geography from East Tennessee State University and an M.A. in Geography from Appalachian State University, both with concentrations in GIS. He also holds the GISP (professional) Certification from the GIS Certification Institute.
+	  </p> 
+	  </div>
+          <a class="btn btn-secondary" id="ViewMore1" href="#" role="button" onclick="MoreLess(0)">show more &darr;</a>
+	</div> <!--/column-->
+
+	<!--Column2 Starts Here-->
+	<div class="col-md-4">
+	</div> <!--/column-->
+
+	<!--Column3 Starts Here-->
+	<div class="col-md-4">
+	</div> <!--/column-->
+
+      </div> <!-- /row -->
+
+      <hr>
+      <footer>
+        <p>&copy; AMS SCPC Tools of the Trade 2018</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+<!--JAVASCRIPT FUNCTIONS BEGIN HERE-->
+<script>
+var pToggle = [0,0,0];
+var pName = ["p1", "p2", "p3"];
+var ViewMoreName = ["ViewMore1", "ViewMore2", "ViewMore3"];
+var hashtag = "#";
+
+function MoreLess(x){
+
+if (pToggle[x] == 0){
+	$(hashtag.concat(pName[x])).css({
+		'height': 'auto'
+	});
+	document.getElementById(ViewMoreName[x]).innerHTML="show less &uarr;";
+	pToggle[x] = 1;
+
+}
+else if (pToggle[x] == 1){
+	$(hashtag.concat(pName[x])).css({
+		'height': '10em'
+	});
+	document.getElementById(ViewMoreName[x]).innerHTML="show more &darr;";
+	pToggle[x] = 0 ;
+}
+}
+</script>
+</html>
