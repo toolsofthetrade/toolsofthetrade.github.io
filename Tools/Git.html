@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--Python Page
+by C Todd Rhodes
+12/20/2017
+Last Updated: 12/20/2017
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/totstyle.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+
+    <!-- Note: customized styles are in external stylesheet -->
+
+  </head>
+
+  <body>
+    <script type="text/javascript">
+    $(document).ready(function(){  $("#header").load("./header.html");});
+
+    </script>
+
+<div id="header"></div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Tool: Version Control with Git and Github</h1>
+        <p>The Tools of the Trade Session has been honored to have experts on a variety of different tools. Check out the supplemental material generously provided by these experts!</p>
+	<!--  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+
+    <!--Column1 Starts Here-->
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+      <!-- Column1 Starts Here -->
+        <div class="col-md-4">
+          <h2>Emily Fischer - 2016</h2> 
+	  <img src="Images/EmilyFischer2016.jpg" alt="Emily Fischer" height="250" width="auto" border="50">
+	  <div class="content" id="p1">
+		  <h5><a href="SuppMat/EmilyFischer/Git_EmilyFischer_2016.docx" download>Download Supplemental Material</a></h5>
+		  <h5><a href="Slides/EmilyFischer/Git_EmilyFischer_2016.pptx" download>Download Slides</a></h5>
+	  <h4>About</h4>
+	  <p><span id="tab"></span> Dr. Emily Fischer is a professor in the department of Atmospheric Sciences at Colorado State University. Her research uses both field-based and applied modeling approaches to investigate the sources of atmospheric trace gases to remote environments. An underlying goal of her work is to improve our understanding of the role of climate in determining the atmosphere's self-cleansing capacity. Past research during her PhD at the University of Washington focused on the transpacific transport of Asian air pollutants. Emily has been a NOAA Climate and Global Change Fellow, and a Harvard Center for the Environment Fellow.  Emily really enjoys being a part of interdisciplinary teams working on issues related to air quality. In this vein, she is currently working on the impact of oil and gas development on local and global air quality. She has a number of projects related to forest fires, air quality and health.  Emily is also leading a mentoring program for college-level women interested in the geosciences. <br>
+	  </p>
+	 </div>
+          <a class="btn btn-secondary" id="ViewMore1" href="#" role="button" onclick="MoreLess(0)">show more &darr;</a>
+	</div> <!--/column-->
+
+	<!--Column2 Starts Here-->
+	<div class="col-md-4">
+          <h2>Michael Bell - 2017</h2> 
+	  <img src="Images/MichaelBell2017.jpg" alt="Michael Bell" height="250" width="auto" border="50">
+	  <div class="content" id="p2">
+		  <h5><a href="SuppMat/MichaelBell/Github_MichaelBell_2017.pdf" download>Download Supplemental Material</a></h5>
+		  <h5><a href="Slides/MichaelBell/Github_MichaelBell_2017.pdf" download>Download Slides</a></h5>
+	  <h4>About</h4>
+	  <p><span id="tab"></span>Michael Bell became interested in the atmosphere and tropical cyclones (TCs) at a young age after experiencing a hurricane landfall in Florida. After obtaining a B.A. degree in Florida, he moved to Colorado to pursue math and meteorology, and worked at the National Center for Atmospheric Research as an airborne radar field support scientist and researcher. He completed his M.S. thesis at Colorado State University on TC intensity theory, and was awarded the Herbert Riehl Memorial Award for his graduate work. He completed his Ph.D. dissertation at the Naval Postgraduate School (NPS) in Monterey, California on air-sea interaction in TCs in 2010. Michael transitioned to a Research Assistant Professor at NPS after graduation, and then moved to the University of Hawaii in 2012 as an Assistant Professor teaching physical and radar meteorology. He joined the faculty at Colorado State University in August 2016 as an Associate Professor. <br>
+	  <span id="tab"></span>Michael has participated in 10 field experiments, and is the recent recipient of the NSF CAREER and ONR Young Investigator Awards to study TC intensification and improve physical parameterizations in forecast models. His primary interests are in tropical, mesoscale, and radar meteorology. A central focus of his research is studying the mesoscale structure and intensification of tropical cyclones throughout their life-cycle from genesis to extratropical transition. This research is accomplished through the collection and analysis of research quality observations from aircraft and Doppler radars, in conjunction with high-resolution numerical modeling. A significant component of his research effort is also aimed at improving mesoscale and radar analysis techniques and open source software tools. <br> </p>
+	 </div>
+          <a class="btn btn-secondary" id="ViewMore2" href="#" role="button" onclick="MoreLess(1)">show more &darr;</a>
+	</div> <!--/column-->
+
+	<!--Column3 Starts Here-->
+	<div class="col-md-4">
+	</div> <!--/column-->
+
+      </div> <!-- /row -->
+
+      <hr>
+      <footer>
+        <p>&copy; AMS SCPC Tools of the Trade 2018</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+<!--JAVASCRIPT FUNCTIONS BEGIN HERE-->
+<script>
+var pToggle = [0,0,0];
+var pName = ["p1", "p2", "p3"];
+var ViewMoreName = ["ViewMore1", "ViewMore2", "ViewMore3"];
+var hashtag = "#";
+
+function MoreLess(x){
+
+if (pToggle[x] == 0){
+	$(hashtag.concat(pName[x])).css({
+		'height': 'auto'
+	});
+	document.getElementById(ViewMoreName[x]).innerHTML="show less &uarr;";
+	pToggle[x] = 1;
+
+}
+else if (pToggle[x] == 1){
+	$(hashtag.concat(pName[x])).css({
+		'height': '10em'
+	});
+	document.getElementById(ViewMoreName[x]).innerHTML="show more &darr;";
+	pToggle[x] = 0 ;
+}
+}
+</script>
+</html>

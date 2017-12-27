@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--Python Page
+by C Todd Rhodes
+12/20/2017
+Last Updated: 12/20/2017
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/totstyle.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+
+    <!-- Note: customized styles are in external stylesheet -->
+
+  </head>
+
+  <body>
+    <script type="text/javascript">
+    $(document).ready(function(){  $("#header").load("./header.html");});
+
+    </script>
+
+<div id="header"></div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Tool: Fortran</h1>
+        <p>The Tools of the Trade Session has been honored to have experts on a variety of different tools. Check out the supplemental material generously provided by these experts!</p>
+	<!--  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+
+    <!--Column1 Starts Here-->
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+      <!-- Column1 Starts Here -->
+        <div class="col-md-4">
+          <h2>Steve Herbener - 2016</h2> 
+	  <img src="Images/SteveHerbener2016.jpg" alt="Steve Herbener" height="250" width="auto" border="50">
+	  <div class="content" id="p1">
+		  <h5><a href="SuppMat/SteveHerbener/Fortran_SteveHerbener_2016.zip" download>Download Supplemental Material</a></h5>
+		  <h5><a href="Slides/SteveHerbener/Fortran_SteveHerbener_2016.pptx" download>Download Slides</a></h5>
+	  <h4>About</h4>
+	  <p><span id="tab"></span> Stephen Herbener is a research associate in the Atmospheric Science Department at Colorado State University. He is a member of Professor Susan van den Heever’s Cloud Processes Group performing computer modeling research, and is currently studying the impacts of Saharan dust on tropical cyclone development. Stephen came to this position after a twenty-five year career in electrical engineering that included positions at Hewlett-Packard and Intel Corporation. His fascination with the power and beauty of weather phenomena along with an inquisitive nature drew him to the field of atmospheric science research. Stephen holds a B.S. in Computer Science from the University of Nebraska, a M.S. in Electrical Engineering from the University of Illinois, and is currently pursuing a Ph.D. degree in Atmospheric Science at Colorado State University. <br> 
+	  </p>
+	 </div>
+          <a class="btn btn-secondary" id="ViewMore1" href="#" role="button" onclick="MoreLess(0)">show more &darr;</a>
+	</div> <!--/column-->
+
+	<!--Column2 Starts Here-->
+	<div class="col-md-4">
+	</div> <!--/column-->
+
+	<!--Column3 Starts Here-->
+	<div class="col-md-4">
+	</div> <!--/column-->
+
+      </div> <!-- /row -->
+
+      <hr>
+      <footer>
+        <p>&copy; AMS SCPC Tools of the Trade 2018</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+<!--JAVASCRIPT FUNCTIONS BEGIN HERE-->
+<script>
+var pToggle = [0,0,0];
+var pName = ["p1", "p2", "p3"];
+var ViewMoreName = ["ViewMore1", "ViewMore2", "ViewMore3"];
+var hashtag = "#";
+
+function MoreLess(x){
+
+if (pToggle[x] == 0){
+	$(hashtag.concat(pName[x])).css({
+		'height': 'auto'
+	});
+	document.getElementById(ViewMoreName[x]).innerHTML="show less &uarr;";
+	pToggle[x] = 1;
+
+}
+else if (pToggle[x] == 1){
+	$(hashtag.concat(pName[x])).css({
+		'height': '10em'
+	});
+	document.getElementById(ViewMoreName[x]).innerHTML="show more &darr;";
+	pToggle[x] = 0 ;
+}
+}
+</script>
+</html>
