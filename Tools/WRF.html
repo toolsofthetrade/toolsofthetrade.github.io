@@ -91,32 +91,11 @@ Last Updated: 12/20/2017
     <script src="../js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+  
+    <!--Source Script Specifically Made for TOT Website-->
+    <script src="../js/totFunctions.js"></script>
+  
   </body>
 
-<!--JAVASCRIPT FUNCTIONS BEGIN HERE-->
-<script>
-var pToggle = [0,0,0];
-var pName = ["p1", "p2", "p3"];
-var ViewMoreName = ["ViewMore1", "ViewMore2", "ViewMore3"];
-var hashtag = "#";
-
-function MoreLess(x){
-
-if (pToggle[x] == 0){
-	$(hashtag.concat(pName[x])).css({
-		'height': 'auto'
-	});
-	document.getElementById(ViewMoreName[x]).innerHTML="show less &uarr;";
-	pToggle[x] = 1;
-
-}
-else if (pToggle[x] == 1){
-	$(hashtag.concat(pName[x])).css({
-		'height': '10em'
-	});
-	document.getElementById(ViewMoreName[x]).innerHTML="show more &darr;";
-	pToggle[x] = 0 ;
-}
-}
-</script>
 </html>
