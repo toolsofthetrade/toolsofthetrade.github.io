@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Tools of the Trade - AMS Student Conference</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -38,15 +38,17 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
+	<!--Column1-->
         <div class="col-md-4">
           <h2>AMS Goes to Austin, Texas!</h2>
 	  <img src="Images/AustinTexas.jpg" alt="Austin Texas" height="200" width="auto" border="50">
           <p>This year AMS will be in Austin, Texas! We look forward to meeting new fellow scientists and reconnecting with our collegues. Be sure to check out the Tools of the Trade Session at the AMS Student Conference! </p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
+          <p><a class="btn btn-secondary" href="https://annual.ametsoc.org/2018/" target="_blank" role="button">AMS 2018 Homepage &raquo;</a></p>
+	</div> <!--/column-->
+	<!--Column2-->
         <div class="col-md-4">
           <h2>Tools of the Trade Speakers</h2> 
-	  <p>We are proud to announce this years Tools of the Trade speakers: <br>
+	  <p>We are proud to announce this years Tools of the Trade speakers: <br> <br>
 	  <span id="tab"></span>Brian Rose - Python <br>
 	  <span id="tab"></span>Matt Taraldsen - GIS <br>
 	  <span id="tab"></span>Lori Brown - Web Development <br>
@@ -56,14 +58,22 @@
 	  <span id="tab"></span><br>
 	  Let the experts introduce you to a variety of tools used by atmospheric scientists.
 	  </p>
-	  <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
+	</div> <!--/column-->
+	<!--Column3-->
         <div class="col-md-4">
-          <h2>Featured Tool</h2>
-          <p>Here will be a featured tool from a past conference</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+          <h2>Featured Tool: Git Version Control</h2>
+          <h2>Emily Fischer - 2016</h2> 
+	  <img src="Tools/Images/EmilyFischer2016.jpg" alt="Emily Fischer" height="250" width="auto" border="50">
+	  <div class="content" id="p3">
+		  <h5><a href="Tools/SuppMat/EmilyFischer/Git_EmilyFischer_2016.docx" download>Download Supplemental Material</a></h5>
+		  <h5><a href="Tools/Slides/EmilyFischer/Git_EmilyFischer_2016.pptx" download>Download Slides</a></h5>
+	  <h4>About</h4>
+	  <p><span id="tab"></span> Dr. Emily Fischer is a professor in the department of Atmospheric Sciences at Colorado State University. Her research uses both field-based and applied modeling approaches to investigate the sources of atmospheric trace gases to remote environments. An underlying goal of her work is to improve our understanding of the role of climate in determining the atmosphere's self-cleansing capacity. Past research during her PhD at the University of Washington focused on the transpacific transport of Asian air pollutants. Emily has been a NOAA Climate and Global Change Fellow, and a Harvard Center for the Environment Fellow.  Emily really enjoys being a part of interdisciplinary teams working on issues related to air quality. In this vein, she is currently working on the impact of oil and gas development on local and global air quality. She has a number of projects related to forest fires, air quality and health.  Emily is also leading a mentoring program for college-level women interested in the geosciences. <br>
+	  </p>
+	 </div>
+          <a class="btn btn-secondary" id="ViewMore3" href="#" role="button" onclick="MoreLess(2)">show more &darr;</a>
+	</div> <!--/column-->
+      </div> <!--/row-->
 
       <hr>
 
@@ -81,5 +91,10 @@
     <script src="./js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
+
+  
+    <!--Source Script Specifically Made for TOT Website-->
+    <script src="./js/totFunctions.js"></script>
+  
   </body>
 </html>
